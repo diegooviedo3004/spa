@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>SPA</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="home_btn" href="#">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" id="contact_btn" aria-current="page" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  id="aboutus_btn" href="#">Sobre nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+          <div id="home">
+            <div class="container m-5 p-5 ">
+                <div class="jumbotron">
+                    <h1 class="display-4">Pagina de Libros</h1>
+                    <p class="lead">En esta pagina podrás ver funcionalidades SPA con Javascript nativo</p>
+                    <hr class="my-4">
+                    <p>Esta es una lista de los libros actuales</p>
+                    <hr>
+                    <div id="libros">
+
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+          <div id="add">
+            <div class="container m-5 p-5">
+                <div class="jumbotron">
+                    <h1 class="display-4">Pagina para agregar libros</h1>
+                    <p class="lead">Ingresa tu libro</p>
+                    <hr class="my-4">
+                    <form>
+                      <input type="text" id="titulo" placeholder="Titulo" required>
+                      <input type="submit" id="enviar" value="Enviar">
+                    </form>
+                  </div>
+            </div>
+          </div>
+
+          <div id="aboutus">
+            <div class="container m-5 p-5 ">
+                <div class="jumbotron">
+                    <h1 class="display-4">Pagina de sobre nosotros</h1>
+                    <p class="lead">Este es el ejemplo de una pagina sobre nosotros</p>
+                    <hr class="my-4">
+                    <p>Somos un equipo de desarrollo Indie de videojuegos.</p>
+                  </div>
+            </div>
+          </div>
+      </main>
+
+
+      <script src="index.js"></script>
+</body> 
+</html>
